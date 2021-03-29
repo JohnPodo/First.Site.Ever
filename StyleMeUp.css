@@ -1,0 +1,248 @@
+body {
+  background-color: black;
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 0px;
+  overflow: hidden;
+}
+
+.nav-wrapper {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  width: 100%;
+  height: 50px;
+}
+
+.nav-logo {
+  width: 100%;
+  height: 50px;
+  color: red;
+  display: flex;
+  flex-direction: row;
+}
+
+.nav-logo-content {
+  object-fit: contain;
+  height: 50px;
+}
+
+.nav-important-icons {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.nav-text-content {
+  color: white;
+  text-decoration: none;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.nav-text-content:hover {
+  color: red;
+}
+
+.active-nav-text-content {
+  color: red !important;
+}
+
+.main-container {
+  height: 80vh;
+  width: 100%;
+  margin-top: 30px;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 15% 75%;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  row-gap: 20px;
+}
+
+.menu-context {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  justify-content: center;
+  height: 20px;
+  transition-property: background-color, height, color, text-decoration,
+    font-size, font-family, font-weight;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+}
+
+.menu-context:hover {
+  background-color: red;
+  height: 40px;
+  color: black;
+  text-decoration: underline;
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+}
+
+.menu-context-active {
+  background-color: red !important;
+  height: 40px !important;
+  color: black !important;
+  text-decoration: underline !important;
+  font-size: 30px !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: bolder !important;
+}
+
+.main-informations {
+  width: 100%;
+  background-color: white;
+  border: 2px red solid;
+  display: grid;
+  grid-template-rows: 1fr;
+  overflow-y: auto;
+}
+
+.full-content {
+  width: 100%;
+  height: 150px;
+  border-bottom: 2px solid black;
+  padding: 5px;
+  display: grid;
+  grid-template-columns: 85% 15%;
+  grid-template-rows: 1fr;
+  row-gap: 0px;
+  margin-top: 0px;
+}
+
+.content-info {
+  display: grid;
+  grid-template-columns: 96px auto;
+}
+
+.content-services {
+  border-left: 2px black solid;
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+
+.content-services-link {
+  text-align: center;
+  text-decoration: none;
+  color: black;
+}
+
+.link-active {
+  text-decoration: underline !important;
+  font-weight: bolder !important;
+}
+
+.content-picture-class {
+  object-fit: contain;
+  height: 150px;
+  width: 96px;
+  object-position: center;
+}
+
+.content-general-info {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  width: 100%;
+  height: 150px;
+}
+
+.content-attributes {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  height: 130px;
+  overflow-y: auto;
+}
+table {
+  max-height: 90% !important;
+}
+.content-connections {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+  overflow-y: auto;
+  height: 130px;
+  width: 270px;
+}
+
+.main-informations-creation-menu {
+  padding: 30px;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
+  background-color: gray;
+  align-items: center;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.map-text {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  border-bottom: 2px solid black;
+  height: 300px;
+  padding: 5px;
+}
+
+.map {
+  height: 310px;
+  width: 540px;
+}
+
+.map-content {
+  height: 300px;
+  width: 540px;
+  align-items: center;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  word-wrap: break-word;
+  width: fit-content;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 100%;
+  height: 300px;
+  justify-items: center;
+}
+
+.Info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="StyleMeUp.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="BurnMeHead.js"></script>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="nav-logo">
+            <img src="SchoolLogo..png" alt="SchoolLogo" class="nav-logo-content">
+            <h2>My School</h2>
+        </div>
+        <div class="nav-important-icons">
+            
+                <a href="index.html" class="nav-text-content "><i class="fa fa-2x fa-home"></i></a>
+            
+                <a href="CreateStudent.html" class="nav-text-content active-nav-text-content"><i class="fa fa-2x fa-plus square"></i></a>
+            
+                <a href="AboutMe.html" class="nav-text-content"><i class="fa fa-2x fa-info-circle"></i></a>
+            
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="menu">
+
+                <a href="CreateStudent.html" class="menu-context">Student</a>
+
+                <a href="CreateTrainer.html" class="menu-context">Trainer</a>
+
+                <a href="CreateAssignment.html" class="menu-context">Assignment</a>
+
+                <a href="CreateCourse.html" class="menu-context menu-context-active">Course</a>
+            
+        </div>
+        <div class="main-informations-creation-menu">
+            <h1>Complete the form to create a Course</h1><br>
+            <form action="CreateCourse.html" method="POST" id="formTrainer" autocomplete="off"
+                  onsubmit="return ValidateMeCu()">
+                <table border="10" style="border-spacing: 5px;">
+                    <tr>
+                        <td align="right">Title:</td>
+                        <td><input type="text" id="CTitle"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Stream:</td>
+                        <td><input type="checkbox" id="CSChoise1" value="Part-Time"><label for="CSChoise1">Part-Time</label></td>
+                        
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CSChoise2" value="Full-Time"><label for="CSChoise2">Full-Time</label></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Type:</td>
+                        <td><input type="checkbox" id="CTChoise1" value="Part-Time"><label for="CTChoise1">C#</label></td>
+                        
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise2" value="Full-Time"><label for="CTChoise2">SQL</label></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise3" value="Full-Time"><label for="CTChoise3">Java</label></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise4" value="Full-Time"><label for="CTChoise4">Javascript</label></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise5" value="Full-Time"><label for="CTChoise5">PhP</label></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise6" value="Full-Time"><label for="CTChoise6">Html&Css</label></td>
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="CTChoise7" value="Full-Time"><label for="CTChoise7">Python</label></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Profile Picture</td>
+                        <td><input type="file" accept="image/x-png,image/gif,image/jpeg" id="Prof" style="width: 115px;" onchange="CheckMeUp()"><i class="fa fa-check" aria-hidden="true" style="visibility: hidden;" id="Yes"></i><i id="No" class="fa fa-times" aria-hidden="true" style="visibility: hidden;"></i></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Starting Date:</td>
+                        <td><input type="date" id="StartDate"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">End Date:</td>
+                        <td><input type="date" id="EndDate"></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+</html>

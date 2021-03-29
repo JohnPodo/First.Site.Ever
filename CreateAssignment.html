@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="StyleMeUp.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="BurnMeHead.js"></script>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="nav-logo">
+            <img src="SchoolLogo..png" alt="SchoolLogo" class="nav-logo-content">
+            <h2>My School</h2>
+        </div>
+        <div class="nav-important-icons">
+            
+                <a href="index.html" class="nav-text-content "><i class="fa fa-2x fa-home"></i></a>
+            
+                <a href="CreateStudent.html" class="nav-text-content active-nav-text-content"><i class="fa fa-2x fa-plus square"></i></a>
+            
+                <a href="AboutMe.html" class="nav-text-content"><i class="fa fa-2x fa-info-circle"></i></a>
+            
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="menu">
+
+                <a href="CreateStudent.html" class="menu-context">Student</a>
+
+                <a href="CreateTrainer.html" class="menu-context">Trainer</a>
+
+                <a href="CreateAssignment.html" class="menu-context  menu-context-active">Assignment</a>
+
+                <a href="CreateCourse.html" class="menu-context">Course</a>
+            
+        </div>
+        <div class="main-informations-creation-menu">
+            <h1>Complete the form to create an Assignment</h1><br>
+            <form action="CreateAssignment.html" method="POST" id="formTrainer" autocomplete="off"
+                  onsubmit="return ValidateMeAss()">
+                <table border="10" style="border-spacing: 5px;">
+                    <tr>
+                        <td align="right">Title:</td>
+                        <td><input type="text" id="ATitle"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Describtion:</td>
+                        <td><input type="text" id="ADes" placeholder="Optional"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">SubDateTime:</td>
+                        <td><input type="number" id="ADD" placeholder="DD" style="width: 40px; -webkit-appearance: none; -moz-appearance: textfield;"> -
+                            <input type="number" id="AMM" placeholder="MM" style="width: 40px;">
+                    </td>
+                    </tr>
+                    <tr>
+                        <td align="right">Profile Picture</td>
+                        <td><input type="file" accept="image/x-png,image/gif,image/jpeg" id="Prof" style="width: 115px;" onchange="CheckMeUp()"><i class="fa fa-check" aria-hidden="true" style="visibility: hidden;" id="Yes"></i><i id="No" class="fa fa-times" aria-hidden="true" style="visibility: hidden;"></i></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Oral Mark:</td>
+                        <td><input type="text" id="Oral"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Total Mark:</td>
+                        <td><input type="text" id="Total"></td>
+                    </tr>
+                    <tr>
+                        <td align="right">Assign to Course:</td>
+                        <td><input type="checkbox" id="AChoise1" value="CB-Life"><label for="AChoise1"> CB-Life</label></td>
+                        
+                    </tr>
+                    <tr>
+                        <td ></td>
+                        <td><input type="checkbox" id="AChoise2" value="CB-Entertainment"><label for="AChoise2"> CB-Entertainment</label></td>
+                    </tr>
+                    <tr>
+                        <td align="center" colspan="2"><button type="submit">Submit</button></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+</body>
+</html>

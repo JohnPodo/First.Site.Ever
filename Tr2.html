@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My School</title>
+    <link rel="stylesheet" href="StyleMeUp.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+    <script src="BurnMeHead.js"></script>
+</head>
+<body>
+    <div class="nav-wrapper">
+        <div class="nav-logo">
+            <img src="SchoolLogo..png" alt="SchoolLogo" class="nav-logo-content">
+            <h2>My School</h2>
+        </div>
+        <div class="nav-important-icons">
+            
+                <a href="index.html" class="nav-text-content active-nav-text-content"><i class="fa fa-2x fa-home"></i></a>
+            
+                <a href="CreateStudent.html" class="nav-text-content"><i class="fa fa-2x fa-plus square"></i></a>
+            
+                <a href="AboutMe.html" class="nav-text-content"><i class="fa fa-2x fa-info-circle"></i></a>
+            
+        </div>
+    </div>
+    <div class="main-container">
+        <div class="menu">
+
+                <a href="index.html" class="menu-context ">Students</a>
+
+                <a href="index-trainers.html" class="menu-context menu-context-active">Trainers</a>
+
+                <a href="index-assignments.html" class="menu-context">Assignments</a>
+
+                <a href="index-courses.html" class="menu-context">Courses</a>
+            
+        </div>
+        <div class="main-informations">
+            <div class="full-content">
+                <div class="content-info">
+                    <div class="content-picture">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/02/Tweety.svg/1200px-Tweety.svg.png" alt="Profile Pic" class="content-picture-class">
+                    </div>
+                    <div class="content-general-info">
+                        <div class="content-attributes">
+                            <div class="firstname">Firstname: Tweety</div>
+                            <div class="lastname">Lastname: YellowBird</div>
+                            <div class="subject">Subject:C#</table></div>
+                        </div>
+                        <div class="content-connections">
+                            <table>
+                                <tr>
+                                    <td align="right">Courses:</td>
+                                    <td>CB-Life</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-services">
+                    <a href="Tr1.html" class="content-services-link">Edit</a>
+                    <a href="Tr1.html" class="content-services-link">Update</a>
+                    <a href="#" class="content-services-link" onclick="return YouSure()">Delete</a>
+                </div>
+            </div>
+            <div class="full-content">
+                <div class="content-info">
+                    <div class="content-picture">
+                        <img src="https://i.pinimg.com/originals/78/89/ed/7889edbd6fdcf4e63f13efc538c78dbc.jpg" alt="Profile Pic" class="content-picture-class" id="pic">
+                    </div>
+                    <div class="content-general-info">
+                        <div class="content-attributes">
+                            <div class="firstname">Firstname: <input type="text" id="fname" placeholder="Road"></div>
+                            <div class="lastname">Lastname: <input type="text" placeholder="Runner" id="lname"></div>
+                            <div class="subject"><input type="checkbox" value="C#" id="chb1" >C# <br>
+                                <input type="checkbox" value="SQL" id="chb2" checked>SQL <br>
+                                <input type="checkbox" value="Html&Css" id="chb3">Html&Css <br>
+                                <input type="checkbox" value="Javascript" id="chb4">Javascript
+                            </div>
+                            <div class="buttons"><input type="file" accept="image/x-png,image/gif,image/jpeg" id="Prof" style="width: 115px;" onchange="ChangePic(this)"><button type="button" onclick="ValidateMeEditTr()">Done</button></div>
+                        </div>
+                        <div class="content-connections">
+                            <table>
+                                <tr>
+                                    <td align="right">Courses:</td>
+                                    <td><input type="checkbox" checked id="course1">CB-Life</td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><input type="checkbox" id="course2">CB-Entertainment</td>
+                                </tr>
+                            </table>
+                        </div>
+                       
+                    </div>
+                </div>
+                <div class="content-services">
+                    <a href="Tr2.html" class="content-services-link">Edit</a>
+                    <a href="Tr2.html" class="content-services-link">Update</a>
+                    <a href="#" class="content-services-link" onclick="return YouSure()">Delete</a>
+                </div>
+            </div>
+            <div class="full-content">
+                <div class="content-info">
+                    <div class="content-picture">
+                        <img src="https://i.pinimg.com/originals/cb/b7/67/cbb767ac0a2d6364993085a57be5525b.jpg" alt="Profile Pic" class="content-picture-class">
+                    </div>
+                    <div class="content-general-info">
+                        <div class="content-attributes">
+                            <div class="firstname">Firstname: Speedy</div>
+                            <div class="lastname">Lastname: Gonzales</div>
+                            <div class="subject">Subject:Html&Css</div>
+                        </div>
+                        <div class="content-connections">
+                            <table>
+                                <tr>
+                                    <td align="right">Courses:</td>
+                                    <td>CB-Entertainment</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-services">
+                    <a href="Tr3.html" class="content-services-link">Edit</a>
+                    <a href="Tr3.html" class="content-services-link">Update</a>
+                    <a href="#" class="content-services-link" onclick="return YouSure()">Delete</a>
+                </div>
+            </div>
+            <div class="full-content">
+                <div class="content-info">
+                    <div class="content-picture">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Marvin_the_Martian.svg/1200px-Marvin_the_Martian.svg.png" alt="Profile Pic" class="content-picture-class">
+                    </div>
+                    <div class="content-general-info">
+                        <div class="content-attributes">
+                            <div class="firstname">Firstname: Marvin</div>
+                            <div class="lastname">Lastname: Martian</div>
+                            <div class="subject">Subject:Javascript</div>
+                        </div>
+                        <div class="content-connections">
+                            <table>
+                                <tr>
+                                    <td align="right">Courses:</td>
+                                    <td>CB-Entertainment</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-services">
+                    <a href="Tr4.html" class="content-services-link">Edit</a>
+                    <a href="Tr4.html" class="content-services-link">Update</a>
+                    <a href="#" class="content-services-link" onclick="return YouSure()">Delete</a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>
